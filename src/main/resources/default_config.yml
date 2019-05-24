@@ -1,0 +1,23 @@
+seed: 12915
+dataset: src/main/resources/ml100k.csv
+folds: 5
+configs:
+- random
+- mf/config79.yml
+- coclust/config17.yml
+nruns: 5
+threshold: 3
+r: 25
+oneR: false
+normalize: false
+binarize: false
+doPredEval: false
+doIREval: false
+doCoclustEval: false
+doRelDistEval: false
+doTimeEval: false
+strategies:
+- trainingitems
+- testratings
+filterBBCF: false
+doPerUserEval: false
